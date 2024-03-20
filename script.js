@@ -12,7 +12,6 @@ window.addEventListener('scroll',()=>{
 menuIcon.addEventListener('click',()=>{
   navbar.classList.toggle('active')
   searchBox.classList.remove('active')
-  // menuIcon.classList.toggle('fa-bars')
 })
 window.addEventListener('scroll',()=>{
   navbar.classList.remove('active')

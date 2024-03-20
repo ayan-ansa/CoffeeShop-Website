@@ -117,7 +117,6 @@ ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
     align-items: center;
-    /* padding: 50px 100px; */
     gap: 1.5rem;
 }
 
@@ -435,28 +434,44 @@ ul li a:hover {
     }
 
     .home-text {
-        padding-top: 35px;
+        margin-top: 4rem;
+        padding-left: 5rem;
     }
     .about-text {
         text-align: center;
     }
 }
+@media (max-width:460px) {
 
+    .about-image img {
+        width: 25rem;
+    }
+    .home-text {
+        padding-top: 2rem;
+    }
+}
 @media (max-width:360px) {
     header {
         padding: 9px 4%;
     }
 
     #logo img {
-        width: 50px;
+        width: 60px;
+    }
+    .home-image img {
+        width: 20rem;
+    }
+    #btn{
+        padding: 8px 20px;
+        font-size: 1rem;
     }
 
-    #menu i {
+    #menu i,.header-icons i{
         font-size: 18px;
     }
 
     .home-text {
-        padding-top: 15px;
+        padding-top: 2rem;
     }
 
     .home-text h1 {
@@ -486,5 +501,10 @@ ul li a:hover {
     .heading h2 {
         font-size: 1.2rem;
 
+    }
+}
+@media (max-width:330px) {
+    .home-text {
+        padding-top: 2rem;
     }
 }
